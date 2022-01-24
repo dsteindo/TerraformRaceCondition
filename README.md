@@ -1,7 +1,7 @@
-** Disclaimer
+## Disclaimer
 For more info of this project see https://github.com/Azure-Samples/jmeter-aci-terraform
 
-** Steps:
+## Steps:
 - Import into an Azure Repository
 - Create a Library and maintain at least following variables
   - AZURE_SERVICE_CONNECTION_NAME = name of the service connection
@@ -17,7 +17,7 @@ For more info of this project see https://github.com/Azure-Samples/jmeter-aci-te
 - Create the Azure pipeline based on the yml file
   - It will import an existing resource group as this is required by dev ops
 
-** Error:
+## Error:
 Pipeline break does not always happen, but on average 33 % of the time for 4 workers, higher failure chance when more workers are needed
 ```
 | Error: creating/updating Container Group: (Name "jmeter-worker3" / Resource Group "####"): containerinstance.ContainerGroupsClient#CreateOrUpdate: Failure sending request: StatusCode=409 -- Original Error: Code="ServiceAssociationLinkNotReady" Message="Network is not ready for container group 'jmeter-worker3'. Please try again."
@@ -30,6 +30,6 @@ Pipeline break does not always happen, but on average 33 % of the time for 4 wor
 ##[error]Bash exited with code '1'.
 ```
 
-** Issues:
+## Issues:
 - https://github.com/Azure-Samples/jmeter-aci-terraform/issues/81
 - https://github.com/hashicorp/terraform-provider-azurerm/issues/15025
